@@ -1,0 +1,9 @@
+{
+  "name": "unsone",
+  "private": true,
+  "engines": {
+    "node": "^22.23.0",
+    "pnpm": "^10.19.0"
+  },
+  "packageManager": "pnpm@10.19.0"
+}
