@@ -1,12 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
-
-export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-}
+import { StyleSheet, Text, View } from "react-native"
 
 const styles = StyleSheet.create({
   container: {
@@ -14,4 +6,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-});
+  box: {
+    backgroundColor: "lightgreen",
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+  },
+})
+
+export default function Index() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.box}>
+        <Text>Welcome to Unsone</Text>
+      </View>
+    </View>
+  )
+}

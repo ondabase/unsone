@@ -1,6 +1,15 @@
 {
   "name": "@unsone/mobile",
+  "private": true,
   "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint",
+    "lint:expo": "expo lint"
+  },
   "dependencies": {
     "@expo/ui": "~56.0.18",
     "expo": "~56.0.12",
@@ -27,16 +36,12 @@
     "react-native-worklets": "0.8.3"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^7.7.3",
+    "@eslint-react/eslint-plugin": "^2.13.0",
     "@types/react": "~19.2.2",
+    "eslint": "^9.39.4",
+    "eslint-config-expo": "^56.0.4",
+    "eslint-plugin-format": "^2.0.1",
     "typescript": "~6.0.3"
-  },
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
-  },
-  "private": true
+  }
 }
